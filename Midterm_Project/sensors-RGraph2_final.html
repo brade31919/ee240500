@@ -1,0 +1,831 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Midterm Project</title>
+	<!--meta name="description" content="HP of M.-J. Chiou"-->
+	<meta name="author" content="Juan-Ting,Lin">
+
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+ 
+   <!-- Script
+   ================================================== -->
+<!--	<script src="js/modernizr.js"></script>
+
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+
+</head>
+<style>
+header {
+   position: relative;
+   height: 800px;
+   min-height: 500px;
+   width: 100%;
+   background: #161415 url(../images/header-background.jpg) no-repeat top center;
+   background-size: cover !important;
+	-webkit-background-size: cover !important;
+   text-align: center;
+   overflow: hidden;
+}
+
+/* vertically center banner section */
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+header .banner {
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 auto;
+   width: 85%;
+   padding-bottom: 30px;s
+   text-align: center;
+}
+
+header .banner-text { width: 100%; }
+header .banner-text h1 {
+   font: 90px/1.1em 'opensans-bold', sans-serif;
+   color: #fff;
+   letter-spacing: -2px;
+   margin: 0 auto 18px auto;
+   text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
+}
+header .banner-text h3 {
+   font: 18px/1.9em 'librebaskerville-regular', serif;
+   color: #A8A8A8;
+   margin: 0 auto;
+   width: 70%;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+}
+header .banner-text h3 span,
+header .banner-text h3 a {
+   color: #fff;
+}
+header .banner-text hr {
+   width: 60%;
+   margin: 18px auto 24px auto;
+   border-color: #2F2D2E;
+   border-color: rgba(150, 150, 150, .1);
+}
+
+/* header social links */
+header .social {
+   margin: 24px 0;
+   padding: 0;
+   font-size: 30px;
+   text-shadow: 0px 1px 2px rgba(0, 0, 0, .8);
+}
+header .social li {
+   display: inline-block;
+   margin: 0 15px;
+   padding: 0;
+}
+header .social li a { color: #fff; }
+header .social li a:hover { color: #11ABB0; }
+
+/* scrolldown link */
+header .scrolldown a {
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+   margin-left: -29px;
+   color: #fff;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+   color: #fff;
+   border-radius: 100%;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+header .scrolldown a:hover { color: #11ABB0; }
+
+/* primary navigation
+--------------------------------------------------------------------- */
+#nav-wrap ul, #nav-wrap li, #nav-wrap a {
+	 margin: 0;
+	 padding: 0;
+	 border: none;
+	 outline: none;
+}
+
+/* nav-wrap */
+#nav-wrap {
+   font: 12px 'opensans-bold', sans-serif;
+   width: 100%;
+   text-transform: uppercase;
+   letter-spacing: 2.5px;
+   margin: 0 auto;
+   z-index: 100;
+   position: fixed;
+   left: 0;
+   top: 0;
+}
+.opaque { background-color: #333; }
+
+/* hide toggle button */
+#nav-wrap > a.mobile-btn { display: none; }
+
+ul#nav {
+   min-height: 48px;
+   width: auto;
+
+   /* center align the menu */
+   text-align: center;
+}
+ul#nav li {
+   position: relative;
+   list-style: none;
+   height: 48px;
+   display: inline-block;
+}
+
+/* Links */
+ul#nav li a {
+
+/* 8px padding top + 8px padding bottom + 32px line-height = 48px */
+
+   display: inline-block;
+   padding: 8px 13px;
+   line-height: 32px;
+	text-decoration: none;
+   text-align: left;
+   color: #fff;
+
+	-webkit-transition: color .2s ease-in-out;
+	-moz-transition: color .2s ease-in-out;
+	-o-transition: color .2s ease-in-out;
+	-ms-transition: color .2s ease-in-out;
+	transition: color .2s ease-in-out;
+}
+
+ul#nav li a:active { background-color: transparent !important; }
+ul#nav li.current a { color: #F06000; }
+
+</style>
+<body style="width: 1288px;">
+
+   <!-- Header
+   ================================================== -->
+   <header style="height: 196px;" id="home">
+
+      <nav class="" style="display: block;" id="nav-wrap">
+
+         <ul id="nav" class="nav">
+            <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+            <li><a class="smoothscroll" href="#about">Project</a></li>
+         </ul> <!-- end #nav -->
+
+      </nav> <!-- end #nav-wrap -->
+
+      <div class="row banner">
+         <div class="banner-text">
+            <h1 style="font-size: 90px;" class="responsive-headline">EE240500 Midterm Project</h1>
+            <h3><span>Create by Juan-Ting, Lin </span></h3>
+            <hr>
+            <ul class="social">
+               <li><a href="http://www.facebook.com/david09022000"><i class="fa fa-facebook"></i></a></li>
+               <!--li><a href="http://www.twitter.com/coldmanck"><i class="fa fa-twitter"></i></a></li-->
+               <li><a href="https://plus.google.com/+andrewliao11"><i class="fa fa-google-plus"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/andrewlaio11"><i class="fa fa-linkedin"></i></a></li>
+               <!-- <li><a href="#"><i class="fa fa-instagram"></i></a></li> -->
+               <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+               <!-- <li><a href="#"><i class="fa fa-skype"></i></a></li> -->
+            </ul>
+         </div>
+      </div>
+
+      <p class="scrolldown">
+         <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+      </p>
+
+   </header> <!-- Header End -->
+
+<!------------------------------------------------------------------------>
+<head>
+<style>
+h1   {color:white;font-family: verdana;
+    font-size: 250%;margin-left: 1em;}
+p    {color:white;
+margin-left:3em;}
+</style>
+<h1>Midterm Project </h1>
+<p id = "speed"></p>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Getting 3D Sensor Data</title>
+
+
+<!--  Horatio  -->
+
+<!-- 1/3. Include the RGraph libraries -->
+<script src="RGraph/libraries/RGraph.common.core.js" >
+<!--
+
+//-->
+</script>
+<script src="RGraph/libraries/RGraph.common.context.js" >
+<!--
+
+//-->
+</script>
+<script src="RGraph/libraries/RGraph.line.js" >
+<!--
+
+//-->
+</script>
+<!--[if IE 8]><script src="../excanvas/excanvas.compressed.js">
+<!--
+
+//-->
+</script><![endif]-->
+</head>
+
+<body background="background.jpg">
+<canvas id="canvas" width="1200" height="700" style="border:1px;"></canvas>
+<!--
+<canvas id="cvs" width="600" height="250">[No canvas support]</canvas>
+-->
+<!--
+Debug Informtion:
+<div id="myDivElement" />
+-->
+
+<script>
+<!--
+
+    var batch=30;
+    var samples=batch;
+    var timecycle=0;
+    var requestCounter = 0;
+    var interval = 0;
+    var nodata = 0;
+    var serverAddressBase = "xdata.";
+    var serverAddress = "xdata.0"; //default file to get from server
+
+    d1 = [];
+    d2 = [];
+    d3 = [];
+    
+    // Pre-pad the arrays with # of samples null values
+    for (var i=0; i< samples; ++i) {
+        d1.push(null);
+        d2.push(null);
+        d3.push(null);
+    }
+
+    var xmlHttp = createXmlHttpRequestObject();
+
+
+    // creates XMLHttpRequest Instance
+    function createXmlHttpRequestObject(){
+
+      // will store XMLHttpRequest object
+      // at here
+      var xmlHttp;
+
+      // works all exceprt IE6 and older  
+      try
+      {
+      
+	// try to create XMLHttpRequest object
+	xmlHttp = new XMLHttpRequest();    
+      }
+      catch(e)
+      {
+	// assume IE 6 or older
+	try
+	{
+	  xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+	}
+	catch(e){ }
+      }
+      
+      // return object or display error
+      if (!xmlHttp)
+	alert("Error creating the XMLHttpRequest Object");
+      else
+	return xmlHttp;
+    }
+
+    function GetJsonData()
+    {
+      //debug
+      //myDiv = document.getElementById("myDivElement"); 
+      //myDiv.innerHTML += "Getting Json Data<br>"; 
+      nodata=0;
+
+      if(xmlHttp)
+      {
+	try
+	{
+	  xmlHttp.open("Get", serverAddress, false);
+	  //xmlHttp.onreadystatechange = handleRequestStateChange; //We use synchronous data transfer, so we don't need this here
+	  xmlHttp.send(null);
+	  try{
+		  handleJsonData();
+	  }
+	  catch(err){
+	     if(err=="no data"){
+	          //alert('Waiting '+serverAddressBase+requestCounter);
+		  //setTimeout(GetJsonData,10); //Try again 10ms later
+		  nodata=1; //record status
+	     }
+	  }
+	}
+	catch(e)
+	{
+	 // alert("Can't connect to server\n" + e.toString());
+	}
+      }
+    }
+
+    function handleRequestStateChange()
+    {
+      if (xmlHttp.readyState == 4)
+      {
+	if(xmlHttp.status == 200|| xmlHttp.status == 0)
+	    {
+	      try
+	      {
+		handleJsonData();
+	      }
+	      catch(e)
+	      {
+	//	alert("Error reading the response: " + e.toString());
+	      }
+	    }
+	    else
+	    {
+	  //    alert("Problem retrieving data:\n" + xmlHttp.statusText);
+	    }
+      
+      
+      }
+      
+    }
+
+    function handleJsonData()
+    {
+      var result = xmlHttp.responseText;
+      if(result==''){
+        //alert('No data from xmlhttprequest object!');
+	throw "no data";
+      }
+      else{
+	      try{
+		      var jobject = eval("(" + result + ")");
+		      var i=0;
+		      if(jobject.time>timecycle){
+			      timecycle=jobject.time;
+			      if(jobject.xarray.length==0){
+				throw "no data";
+			      }
+			      else{
+				      for (i=0;i<jobject.xarray.length;i++)
+				      {
+					  //debug
+					  //myDiv.innerHTML += jobject.xarray[i][0] + ", " + jobject.xarray[i][1] + "<br>" ;
+					  d1[i]=jobject.xarray[i][0];
+					  d2[i]=jobject.xarray[i][1];
+					  d3[i]=jobject.xarray[i][2];
+					  /*
+					  d1.push(jobject.xarray[i][0]); 
+					  d2.push(jobject.xarray[i][1]); 
+					  d3.push(jobject.xarray[i][2]);
+					  */
+				      }
+			      }
+		      }
+		      else{
+			//Do nothing
+		      }
+	      }
+	      catch(e){
+		//Retry; ignore all json errors
+	      }
+      }
+    }
+
+    function getGraph(id, d1, d2, d3)
+    {
+	var graph = new RGraph.Line(id, d1, d2, d3);
+	graph.Set('chart.key', ['Xacc', 'Yacc', 'Zacc']);
+	graph.Set('chart.xticks', 100);
+	graph.Set('chart.gutter', 25);
+	graph.Set('chart.background.barcolor1', 'white');
+	graph.Set('chart.background.barcolor2', 'white');
+	graph.Set('chart.title.xaxis', 'Time >>>');
+	graph.Set('chart.title.yaxis', 'Sensor');
+	graph.Set('chart.title', 'Sensor activities'+' xdata.'+requestCounter);
+	//graph.Set('chart.filled', true);
+	//graph.Set('chart.fillstyle', ['#daf1fa', '#faa']);
+	graph.Set('chart.colors', ['rgb(169, 222, 244)', 'red', 'blue']);
+	graph.Set('chart.linewidth', 1);
+	//graph.Set('chart.ylabels.inside', true);
+	graph.Set('chart.yaxispos', 'right');
+	graph.Set('chart.xaxispos', 'center');
+	//graph.Set('chart.ymin', -128);
+	//graph.Set('chart.ymax', 128);
+	graph.Set('chart.xticks', 25);
+
+	return graph;
+    }
+
+    function drawGraph ()
+    {
+        //debug
+        //myDiv = document.getElementById("myDivElement"); 
+        //myDiv.innerHTML += "Request # " + requestCounter + ": <br>"; 
+
+	RGraph.Clear(document.getElementById("cvs"));
+	
+	//Prepare new file name to get from
+	serverAddress=serverAddressBase+requestCounter;
+	//alert('Debug'+serverAddress);
+
+        //Save data from json object to the arrays
+	GetJsonData();
+	//Draw the graph
+	var graph = getGraph('cvs', d1, d2, d3);
+	graph.Draw();
+	if(!nodata){ //Keep the file counter
+		requestCounter=(requestCounter+1)%2; //cycle counter
+		//alert('Counter changed: '+requestCounter);
+	}
+	else{
+		//alert('Counter keeped: '+requestCounter);
+	}
+	setTimeout(drawGraph,800);
+    }
+
+  // drawGraph();
+   window.onload = function()
+   {
+        x = 160;
+        y = 150;
+        speed = 5;
+        angle = 0;
+        mod = 0;
+        var MAX_Height =20;
+        x_old=160;
+        y_old=200;
+        boundh = 700;
+        boundw = 1200;
+
+
+        canvas = document.getElementById("canvas");
+        context = canvas.getContext("2d");
+
+        mazeImg = new Image();
+        mazeImg.src = "maze2.png";
+        context.drawImage(mazeImg,0,0);
+        context.stroke();
+
+
+        imgData = context.getImageData(0,0,boundw,boundh );
+        data = imgData.data;
+        //context.drawImage(mazeImg,0,0);
+        //context.stroke();
+        //console.log(data[8]);
+        //console.log(boundw);
+        var pix = readimage(50,50);
+        //console.log(pix[0],pix[1],pix[2]);
+
+        car = new Image();
+        car.src="starcraft_terran_battlecruiser_by_voidwar-d7ltbe2.png";
+        car.style.width = '50%'
+                                                                   //car.style.height = 'auto'
+
+                                                                      // window.addEventListener("keydown", keypress_handler, false);
+        
+        // window.addEventListener("keyup", keyup_handler, false);
+       // control();
+        //GetJsonData();
+        //left(d[d1.length-1]);
+        //right(d2[d2.length-1]);
+        //speedup(d3[d3.length-1]);
+        //document.getElementById("speed").innerHTML = "Current speed is:"+speed ;
+    
+
+        var move = setInterval(function()
+        {
+           // GetJsonData();
+           // left(d[d1.length-1]);
+           // right(d2[d2.length-1]);
+           // speedup(d3[d3.length-1]);
+           document.getElementById("speed").innerHTML = "Current speed is:"+speed ;
+            control();  
+            draw();
+        }, 30);
+
+   };
+    function draw()
+    {
+            //var boundh = 700;
+            //var boundw = 1200;
+            context = canvas.getContext("2d");
+            context.clearRect(0, 0, boundw, boundh);
+
+            
+            //win1 = canvas.getContext("2d");
+
+            context.fillStyle = "rgba(179, 218, 255,0.7)";
+            context.fillRect(0,0,boundw,boundh);
+
+           // context.fillStyle = "rgb(0, 0, 220)";
+           // context.fillRect(50, 50, 100, 100);
+
+            x_old =x;
+            y_old =y;
+
+            //x += (speed*mod) * Math.cos(Math.PI/180 * angle);
+            //y += (speed*mod) * Math.sin(Math.PI/180 * angle);
+                                                    //
+            context.moveTo(x_old,y_old);
+            context.lineTo(x,y);
+            context.lineWidth = 2;
+            context.strokeStyle = '#99ccff';
+            context.lineCap = 'round';
+            context.stroke();
+
+            //maze
+            context.drawImage(mazeImg,0,0);
+            context.restore();
+                                                                                        //
+
+            context.save();
+            context.translate(x, y);
+            context.rotate(Math.PI/180 * angle);
+            var ratio = 0.1;
+            context.drawImage(car, -(car.width*ratio/2), -(car.height*ratio/2),ratio*car.width,ratio*car.height);
+            //  context.drawImage(car, 0, 0,0.5*car.width,0.5*car.height);  
+            context.restore();
+            //x_old = x;
+            //y_old = y;
+    }
+    function left(d1){
+        var angle1;
+        if(d1 >=0)
+        {
+            angle1 =angle- 2*d1;
+        }
+        return angle1;
+    }
+
+    function right(d2){
+        var angle1;
+        if(d2 >=0)
+        {
+            angle1= angle+2*d2;
+        }
+        return angle1;
+    }
+
+    function speedup(d3){
+        mod = 1;
+        if(speed<=4 ||speed>=-4){
+            speed =0.1*d3;
+        }
+        else if(speed>4)
+        {
+            speed = 4;
+        }
+        else if(speed<-4)
+        {
+            speed = -4;
+        }
+    }
+    function control(){
+        var angle1;
+        GetJsonData();
+        if(d1[d1.length-1]>0)
+        {
+            angle1 = left(d1[d1.length-1]);
+        }
+        else{
+            angle1 = right(d2[d2.length-1]);
+        }
+         //left(d1[d1.length-1]);
+         //right(d2[d2.length-1]);
+        speedup(d3[d3.length-1]);
+        var new_x=x;
+        var new_y=y;
+    
+        new_x += (speed*mod) * Math.cos(Math.PI/180 * angle1);
+        new_y += (speed*mod) * Math.sin(Math.PI/180 * angle1);
+        canMove(new_x,new_y,angle1);
+
+        //setTimeout(control,20);
+
+    }
+    function canMove2(new_x,new_y){
+        var p1x;
+        var p1y;
+        var p2x;
+        var p2y;
+        var p3x;
+        var p3y;
+        var p4x;
+        var p4y;
+        var ratio = 0.1;
+        var s=10000;
+        line1x = [];
+        line1y = [];
+        line2x = [];
+        line2y = [];
+        line3x = [];
+        line3y = [];
+        line4x = [];
+        line4y = [];
+        p1x = new_x+((car.width-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        p1y = new_y+((car.width-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        p2x = new_x+((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        p2y = new_y+((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        p3x = new_x-((car.width-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        p3y = new_y-((car.width-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        p4x = new_x-((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        p4y = new_y-((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        for(var i=0;i<=10;i+=1){
+            line1x[i] = 0.1*i*(p2x-p4x) +p4x+((car.width-s)*ratio/2)*Math.cos(Math.PI/180 * angle);
+            line1y[i] = 0.1*i*(p2y-p4y) +p4y+((car.width-s)*ratio/2)*Math.sin(Math.PI/180 * angle);
+            line2x[i] = 0.1*i*(p1x-p3x) +p3x+((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle);
+            line2y[i] = 0.1*i*(p1y-p3y) +p3y+((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle);
+            line3x[i] = line1x[i]-2*((car.width-s)*ratio/2)*Math.cos(Math.PI/180 * angle);
+            line3y[i] = line1y[i]-2*((car.width-s)*ratio/2)*Math.sin(Math.PI/180 * angle);
+            line4x[i] = line2x[i]-2*((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle);
+            line4y[i] = line2y[i]-2*((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle);
+        }
+        var move=1;
+        for(var i=0;i<=10;i+=1){
+            if((line1x[i]>=boundw)||(line2x[i]>=boundw)||(line3x[i]>=boundw)||(line4x[i]>=boundw)){
+                move = 0;
+            }
+            if((line1x[i]<0)||(line2x[i]<0)||(line3x[i]<0)||(line4x[i]<0)){
+                move = 0;
+            }
+            if((line1y[i]>=boundh)||(line2y[i]>=boundh)||(line3y[i]>=boundh)||(line4y[i]>=boundh)){
+                move = 0;
+            }
+            if((line1y[i]<0)||(line2y[i]<0)||(line3y[i]<0)||(line4y[i]<0)){
+                move =0;
+            }
+        }
+        if(move===1){
+            x = new_x;
+            y = new_y;
+        }
+
+
+    }
+    function canMove(new_x,new_y,angle1){
+        var p1x;
+        var p1y;
+        var p2x;
+        var p2y;
+        var p3x;
+        var p3y;
+        var p4x;
+        var p4y;
+        var ratio = 0.1;
+        var pp1x;
+        var pp1y;
+        var pp2x;
+        var pp2y;
+        var pp3x;
+        var pp3y;
+        var pp4x;
+        var pp4y;
+        var s = 250;
+        line1x = [];
+        line1y = [];
+        line2x = [];
+        line2y = [];
+        line3x = [];
+        line3y = [];
+        line4x = [];
+        line4y = [];
+
+     
+        p1x = new_x+((car.width-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        p1y = new_y+((car.width-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        p2x = new_x-((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        p2y = new_y+((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        p3x = new_x-((car.width-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        p3y = new_y-((car.width-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        p4x = new_x+((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        p4y = new_y-((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        pp1x = p1x -((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        pp1y = p1y +((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        pp2x = p3x -((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        pp2y = p3y +((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        pp3x = p3x +((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        pp3y = p3y -((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+        pp4x = p1x +((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle1);
+        pp4y = p1y -((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle1);
+
+        for(var i=0;i<=10;i+=1){
+            
+            line1x[i] = 0.1*i*(p2x-p4x) +p4x+((car.width-s)*ratio/2)*Math.cos(Math.PI/180 * angle);
+            line1y[i] = 0.1*i*(p2y-p4y) +p4y+((car.width-s)*ratio/2)*Math.sin(Math.PI/180 * angle);
+            line2x[i] = 0.1*i*(p1x-p3x) +p3x+((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle);
+            line2y[i] = 0.1*i*(p1y-p3y) +p3y+((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle);
+            line3x[i] = line1x[i]-2*((car.width-s)*ratio/2)*Math.cos(Math.PI/180 * angle);
+            line3y[i] = line1y[i]-2*((car.width-s)*ratio/2)*Math.sin(Math.PI/180 * angle);
+            line4x[i] = line2x[i]-2*((car.height-s)*ratio/2)*Math.sin(Math.PI/180 * angle);
+            line4y[i] = line2y[i]-2*((car.height-s)*ratio/2)*Math.cos(Math.PI/180 * angle);
+            console.log("pp",line1y[i],p2y-p4y,i);
+         }
+
+        //console.log(pp1x,pp2x,pp3x,pp4x);
+        //console.log(pp1y,pp2y,pp3y,pp4y);
+
+        var move = 1;
+        //check boundary
+        if(Math.max(pp1x,pp2x,pp3x,pp4x)>=boundw){
+            move =0;
+        }
+        if(Math.min(pp1x,pp2x,pp3x,pp4x)<0){
+            move =0;
+        }
+        if(Math.max(pp1y,pp2y,pp3y,pp4y)>=boundh){
+            move=0;
+        }
+        if(Math.min(pp1y,pp2y,pp3y,pp4y)<0){
+            move=0;
+        }
+        //check image
+        for(var i=0;i<=10;i+=1){
+            pix1 = readimage(line1x[i],line1y[i]);
+            pix2 = readimage(line2x[i],line2y[i]);
+            pix3 = readimage(line3x[i],line3y[i]);
+            pix4 = readimage(line4x[i],line4y[i]);
+            //console.log("pix",line1x[1],line1x[2],line1x[3],line1x[4],line1x[5]);
+            if(pix1[0]<200 && pix1[1]<200 && pix1[2]<200){
+                move = 0;
+                console.log(pix1[0]);
+                break;
+            }
+            if(pix2[0]<200 && pix2[1]<200 && pix2[2]<200){
+                move = 0;
+                console.log(pix2[0]);
+                break;
+            }
+            if(pix3[0]<200 && pix3[1]<200 && pix3[2]<200){
+                move = 0;
+                console.log(pix3[0]);
+                break;
+            }
+            if(pix4[0]<200 && pix4[1]<200 && pix4[2]<200){
+                move = 0;
+                console.log(pix4[0]);
+                break;
+            }
+
+        }
+        //console.log(data[1]);
+        if(move===1){
+            x = new_x;
+            y = new_y;
+            angle = angle1;
+        }
+    }
+    function readimage(x,y){
+        var R
+        var G
+        var B
+        var pix = new Array();
+        x = Math.round(x);
+        y = Math.round(y);
+        pix[0] = data[boundw*4*y +4*x];
+        pix[1] = data[boundw*4*y +4*x+1];
+        pix[2] = data[boundw*4*y +4*x+2];
+        return pix;
+    }
+
+
+
+
+    
+
+//-->
+</script>
+<!--<script type="text/javascript" src="main.js"></script>-->
+
+</body>
+</html>
