@@ -1,1 +1,2 @@
-All the code about final project is here
+所有有關Final Project的code都在此。
+由於上傳檔案時有些資料夾無法傳，因此如有缺失可以直接下載Final_project的壓縮檔，裡面是完整的。
