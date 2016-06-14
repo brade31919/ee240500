@@ -1,0 +1,8 @@
+import subprocess
+
+subprocess.call("mkdir ~/OpenSfM/data/final4/",shell=True)
+subprocess.call("cp ~/OpenSfM/data/final2/config.yaml ~/OpenSfM/data/final4/",shell=True)
+subprocess.call("mkdir ~/OpenSfM/data/final4/images/",shell=True)
+subprocess.call("cp /mnt/rfs/home/root/image* ~/OpenSfM/data/final4/images/",shell=True)
+subprocess.call("cd ~/OpenSfM/",shell=True)
+subprocess.call("bin/run_all/ ./data/final4/",shell=True)
